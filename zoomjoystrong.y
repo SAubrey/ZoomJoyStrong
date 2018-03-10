@@ -133,6 +133,12 @@ int main() {
 	finish();
 }
 
+/* 
+Prints errors to the console with additional
+error details.
+
+@param err Error information 
+*/
 void yyerror(const char* err) {
 	printf("Error: %s\n", err);
 	yyparse();
